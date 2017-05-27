@@ -3,7 +3,7 @@
 <head>
 	<title>Spring Fest</title>
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -19,13 +19,13 @@
 						<td>Password</td>
 					</tr>
 					<tr>
-						<td><input type="email" name="email" class="inputtext"></td>
-						<td><input type="password" name="password" class="inputpassword"></td>
+						<td><input type="email" name="email" class="itext"></td>
+						<td><input type="password" name="password" class="itext"></td>
 						<td><input type="submit" value="Log In" class="signin"></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td><a href="#">Forgotten account?</a></td>
+						<td ><a class="faccount" href="#">Forgotten account?</a></td>
 					</tr>
 				</table>	
 			</form>
@@ -45,19 +45,38 @@
 				<h1>Create an account</h1>
 				<h4> It's free and always will be.</h4>
 			</div>
-			<form class="signup">
-				<input type="text" class="firstname prop" placeholder="First Name">
-				<input type="text" class="surname prop" placeholder="Surname"><br><br>
-				<input type="text" class="email prop" placeholder="Mobile number or email address"><br><br>
-				<input type="password" class="password prop" placeholder="New password"><br><br>
+			<form class="">
+				<input type="text" class="signup" placeholder="First Name">
+				<input type="text" class="signup" placeholder="Surname"><br><br>
+				<input type="text" class="email signup" placeholder="Mobile number or email address"><br><br>
+				<input type="password" class="password signup" placeholder="New password"><br><br>
 				<div class="tac">
-					<p>By clicking Create an account, you agree to our Terms and confirm that you have read our Data Policy, including our Cookie Use Policy. You may receive SMS message notifications from Facebook and can opt out at any time.</p>
+					<p>By clicking Create an account, you agree to our <a class="highlight" href="#">Terms</a> and confirm that you have read our <a class="highlight" href="#">Data Policy,</a> including our <a class="highlight" href="#">Cookie Use Policy.</a> You may receive SMS message notifications from Facebook and can opt out at any time.</p>
 				</div>
-			</form>
-			<div><button type="submit" name="submit" class="submit">Create an account</button></div>	
-			<p class="p2">Create a page for a celebrity, band or business.</p>
+			<div><button type="submit" name="submit" class="submit">Create an account</button></div>
+			</form>	
+			<p class="p2"><a class="highlight" href="#"> Create a page</a> for a celebrity, band or business.</p>
 		</div>
 	</div>
+	<footer>
+		<div class="horrule">
+			<ul>
+				<li>English(UK)</li>
+				<li><a class="highlight" href="#">हिन्दी</a></li>
+				<li><a class="highlight" href="#">मराठी</a></li>
+				<li><a class="highlight" href="#">اردو</a></li>
+				<li><a class="highlight" href="#">ਪੰਜਾਬੀ</a></li>
+				<li><a class="highlight" href="#">বাংলা</a></li>
+				<li><a class="highlight" href="#">ગુજરાતી</a></li>
+				<li><a class="highlight" href="#">தமிழ்</a></li>
+				<li><a class="highlight" href="#">తెలుగు</a></li>
+				<li><button type="plus" name="plus" class="plus highlight">+</button></li>
+			</ul>
+			<br><br>
+			<hr>
+			<p>Rakesh Bal © 2017</p>
+		</div>
+	</footer>
 
 </body>
 </html>
