@@ -63,13 +63,13 @@ body{
 	background: -webkit-linear-gradient(top, #f7f7f7, #dfe3ee);
 	width: 100%;
 	min-width: 1200px;
-	height: 550px;
+	height: 500px;
 }
 
 .body1{
 	float: left;
 	width:55%;
-	height: 550px;
+	height: 500px;
 }
 .body-text{
 	padding-left: 15%;
@@ -90,7 +90,7 @@ body{
 .body2{
 	float: right;
 	width:45%;
-	height: 550px;
+	height: 500px;
 }
 .body-text2{
 	margin-right: 20%;
