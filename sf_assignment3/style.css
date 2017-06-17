@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth');
+
+html, body{
+ 	padding: 0;
+ 	margin: 0;
+}
+html{
+ 	height: 100%;
+}
+body{
+ 	min-height: 100%;
+ 	min-width: 100%;
+ 	color: white;
+ 	background-color: rgba(255, 255, 255, 0.10);
+	background-image: url('media/download3.jpg');
+	background-blend-mode: screen;
+}
+.navbar-custom{
+	background-color: #ffcc66;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+	margin: 2px solid brown;
+	color: white;
+	font-weight: 900;
+}
+
+.navbar-nav{
+	color: white;
+}
+
+.nav li {
+/*    float: left;*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    font-family: 'Amarnath', sans-serif;
+    color: white;
+}
+.nav li a{
+    color: white;
+}
+
+.nav li a:hover{
+    background-color: red;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+}
+
+#turns{
+	float: right;
+}
+#score{
+	float: right;
+}
+
+#responsive{
+	width: 100%;
+	min-width: 800px;
+	display: flex;
+	justify-content: space-around;
+
+}
+#container{
+	width: 800px;
+	text-align: center;
+	display: block;
+	background-color: rgba(217,238,219,0.4);
+	border: 3px solid brown;
+}
+
+#maingame
+{
+	display: flex;
+	justify-content: space-around;
+	min-height: 440px;
+}
+
+
+.col{
+	display:block;
+	width:10vw;
+    color:black;
+	float:left;
+/*	background-color:white;*/
+	border-radius:0.2vw;
+	height:70px;
+	margin:1vw 2vw;
+	background-size:70px;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+/*	border: solid gray 5px;*/
+	transform: rotateY(0deg);
+	transition: 0.3s ease-in-out;
+	transform-style: preserve-3d;
+}

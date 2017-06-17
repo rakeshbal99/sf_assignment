@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Matching Game</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="jquery_functions.js" ></script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-custom">
+		<div class="container-fluid">
+			<div class="navbar-header">
+      			<a class="navbar-brand" href="#">Matching Game</a>
+    		</div>
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">New Game</a></li>
+				<li><a> Turns: <div id="turns"><b>0</b></div></a></li>
+				<li><a> Score: <div id="score"><b>0</b></div></a></li>
+				<li><a><b>Instructions</b></a></li>
+			</ul>
+		</div>
+	</nav>
+	<div id="instructions">
+		<ul>
+			<li>Click on each card to view it.</li>
+			<li>Selet two cards and match them</li>
+			<li>Correct Match: +100 points</li>
+			<li>Incorrect Match: -30 points</li>
+		</ul>	
+		<div id="close">CLOSE</div>
+	</div>
+	<div id="responsive">
+		<div id="container">
+			<div id="maingame">
+				<div class="container1">
+				    <div class="row">
+				        <div id="1" class="col" onclick="rotate(0)"></div>
+				        <div id="2" class="col" onclick="rotate(1)"></div>
+				        <div id="3" class="col" onclick="rotate(2)"></div>
+				        <div id="4" class="col" onclick="rotate(3)"></div>
+				    </div>
+				    <div class="row">
+				        <div id="5" class="col" onclick="rotate(4)"></div>
+				        <div id="6" class="col" onclick="rotate(5)"></div>
+				        <div id="7" class="col" onclick="rotate(6)"></div>
+				        <div id="8" class="col" onclick="rotate(7)"></div>
+				    </div>
+				    <div class="row">
+				        <div id="9" class="col" onclick="rotate(8)"></div>
+				        <div id="10" class="col" onclick="rotate(9)"></div>
+				        <div id="11" class="col" onclick="rotate(10)"></div>
+				        <div id="12" class="col" onclick="rotate(11)"></div>
+				    </div>
+				    <div class="row">
+				        <div id="13" class="col" onclick="rotate(12)"></div>
+				        <div id="14" class="col" onclick="rotate(13)"></div>
+				        <div id="15" class="col" onclick="rotate(14)"></div>
+				        <div id="16" class="col" onclick="rotate(15)"></div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<script>
+		var i;
+			for(i=1;i<17;i++){
+			document.getElementById(i).style.backgroundImage ="url(media/card2.png)";
+			document.getElementById(i).className="col";
+			}	
+	</script>
+	<div id="Congratulations">
+		<div id="Score">Your Score is:</div><br>
+		<div id="Turns">No. of turns is:</div><br>
+		<div id="play-again">PLAY AGAIN</div>
+	</div>
+</body>
+</html>
